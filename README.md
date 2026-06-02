@@ -1,91 +1,93 @@
 # Saleasy
 
-Saleasy is a commercial cockpit for Claude. It runs the full life of a deal from a single plugin: set up your profile once, then attract, prospect, sell and grow accounts. The surface is four skills, but each skill loads a library of detailed playbooks, so the plugin behaves like a complete sales and marketing system rather than a thin prompt wrapper.
+Un assistant commercial complet dans Claude. A complete sales assistant inside Claude.
 
-It is profile driven. The first run interviews you and saves a profile (market, offer, persona, tone, tools). Every skill reads that profile, so the output is already adapted to your role, market and voice. The same repository works for anyone who clones it because the profile is generated per user and never committed.
+Saleasy t'accompagne sur toute la vie d'une vente: attirer, prospecter, vendre et fidéliser. Tu l'installes une fois, tu réponds à quelques questions sur ton activité, puis tu lui parles normalement. Il fait le travail et s'adapte à ton métier, ton offre et ton style.
 
-## What is inside
+---
 
-- 4 skills that map to the real stages of a deal.
-- 12 reference playbooks loaded on demand, so the model pulls only the guidance it needs for the job at hand.
-- A house-style linter wired to GitHub Actions, plus contribution and issue templates.
-- A compliance posture written into every skill (authorized data sources, official sending APIs, GDPR).
+## Français
 
-The skills stay short on purpose. The depth lives in the `references/` folders, which a skill opens only for the matching task. This keeps each invocation focused while giving you the full method behind it.
+### En clair
+Tu dis ce dont tu as besoin ("prépare mon rendez-vous de demain", "écris une relance pour ce prospect", "trouve 20 prospects dans le secteur X") et Saleasy s'en occupe. Pas de configuration technique, pas de clé à coller. Un court entretien au départ et c'est parti.
 
-## The four skills
+Ce n'est pas un simple gadget. Derrière quatre commandes se cache une vraie bibliothèque de méthodes commerciales (prospection, copywriting, closing, négociation, prévisions, fidélisation). Claude charge la bonne méthode au bon moment, sans que tu aies à la chercher.
 
-| Skill | When it runs | Reference playbooks |
-| --- | --- | --- |
-| `saleasy-setup` | First run or "reconfigure saleasy" | profile template and per-type presets |
-| `marketing` | "écris un post LinkedIn", "plan de contenu", "audit SEO" | one playbook covering nine content jobs |
-| `prospecting` | "trouve des leads", "écris un cold email", "mets en place une veille" | finding, messaging, monitoring, sending |
-| `selling` | "prépare mon RDV", "revue de pipeline", "négociation", "renewal" | deals, methodologies, closing-negotiation, proposals, growth, cockpit |
+### Ce que Saleasy fait pour toi
 
-## What each skill actually covers
+#### 1. Configuration (une seule fois)
+Un court entretien sur ton marché, ton offre, ta cible, ton ton et tes outils. Saleasy garde ce profil et l'utilise partout, donc tu n'as plus jamais à tout réexpliquer. Tu peux le modifier quand tu veux.
 
-### saleasy-setup
-A short interview that detects your profile type (founder, SDR, AE, full-cycle, marketer, agency) then writes `saleasy-profile.md`. It records identity, offer, target ICP and persona, differentiation, motion, voice, connected tools, sending authorizations and proof assets. Presets seed sensible defaults per profile type so you are not starting from a blank page.
+#### 2. Marketing et visibilité
+Posts LinkedIn, optimisation de ton profil LinkedIn, calendrier de contenu, campagnes, articles de blog, pages de vente, newsletters, référencement Google (SEO), recyclage d'un contenu en plusieurs formats, aimants à prospects (lead magnets) et positionnement. Chaque contenu vise une douleur client précise et s'appuie sur tes preuves (cas clients, chiffres), jamais sur des promesses inventées.
 
-### marketing
-One playbook with nine jobs: LinkedIn post, LinkedIn profile, editorial calendar, campaign one-pager, long-form copy (blog, landing, newsletter), SEO (search intent, on-page, content-gap, technical audit), repurposing a pillar into derivatives, lead magnets and positioning frames (challenger reframe, category creation, niche, jobs-to-be-done, blue-ocean). Every output ties to a buyer pain and a funnel stage. It pulls proof from the profile instead of inventing claims.
+#### 3. Prospection
+Remplir et travailler le haut du tunnel. Concrètement, Saleasy sait:
 
-### prospecting
-Four playbooks for the top of the funnel.
+- construire une liste de prospects propre et notée (du plus chaud au plus froid), dans le respect du RGPD.
+- repérer le bon moment pour contacter (levée de fonds, recrutement, changement de direction).
+- écrire un cold email court ou une séquence de relance (J0, J3, J7, J10), avec un contrôle qualité avant de te montrer quoi que ce soit.
+- surveiller des comptes en continu et te prévenir dès qu'un signal apparaît.
+- envoyer les messages que tu as validés, via ta messagerie officielle, puis noter le résultat.
 
-- finding: ICP definition, compliant discovery with a source priority order, a GDPR and ePrivacy data-protection section, cleaning and deduplication, enrichment that marks verified against inferred, a tension-signal taxonomy weighted by freshness, scoring with knockout gates and named tiers, a list-quality scorecard, lookalike and competitor sourcing, a five-axis deep dive and the pipeline file schema.
-- messaging: a personalization decision gate, opener and subject-line patterns, body discipline, the J0/J3/J7/J10 cadence with guardrails, a 0 to 10 quality gate, a reply and objection map, account-based multithreading, competitive battle cards and a measurement model built on positive reply rate.
-- monitoring: a watchlist, scheduled passes over legitimate sources, freshness weighting, alert promotion and a per-run digest.
-- sending: the draft, validate, send approval gate, channel rules, hard limits against anti-bot circumvention, consent and regional rules, plus queued automated follow-ups that still wait for your yes.
+#### 4. Vente et fidélisation
+Du premier rendez-vous à la signature et après:
 
-### selling
-Six playbooks from first meeting to renewal.
+- préparer un rendez-vous (fiche synthèse) ou transformer tes notes d'appel en actions et en email de suivi.
+- faire le point sur ton pipeline et bâtir une prévision (forecast) honnête.
+- t'aider à closer et à négocier sans brader (objections, échelle de concessions, jeux d'acteurs).
+- rédiger une proposition en trois offres (Bon, Mieux, Meilleur) avec un calcul de retour sur investissement.
+- faire grandir tes comptes clients (montée en gamme, risque de non-renouvellement, recommandations).
+- un brief le matin et un bilan chaque semaine pour piloter.
 
-- methodologies: BANT, MEDDIC, SPICED and the eight-dimension POWERFUL scorecard for qualification; SPIN, Challenger and Gap Selling for discovery.
-- deals: a call-prep one-pager, a structured call summary, a pipeline review that scores each deal against the chosen framework and a forecast with commit, best-case and pipeline scenarios.
-- closing-negotiation: a nine-item close-readiness score, closing techniques matched to signals, objection classification with ACIR, a tiered concession ladder, a stakeholder politics map and a champion builder.
-- proposals: a Good, Better, Best structure and a findings-to-ROI model with conservative, likely and optimistic columns.
-- growth: expansion triggers, renewal-risk banding with a save plan and a referral track.
-- cockpit: a ranked morning briefing and an honest weekly review, both able to run on a schedule.
+### Sécurité et respect des règles
+Saleasy n'envoie jamais rien sans ton accord. Claude rédige, tu valides, Claude envoie via tes outils officiels (Gmail ou Microsoft 365), puis note le résultat. Il reste dans les règles des plateformes: aucune automatisation cachée de LinkedIn, aucun contournement des protections. Les données de contact viennent de sources autorisées et publiques, dans le respect du RGPD.
 
-## Profile-driven design
+### Tes fichiers
+Saleasy crée deux fichiers dans ton dossier de travail, jamais publiés:
 
-The first time you use it, `saleasy-setup` runs a short interview and saves a profile: market, offer, target persona, tone and connected tools. Every other skill reads that profile first, so its output is adapted to your situation from the start. Because the profile is generated per user, the same repository works for anyone who clones it.
+- ton profil (marché, offre, cible, ton, outils).
+- ton suivi de prospects et d'affaires. Si tu as un CRM connecté, le CRM fait foi et ce fichier le recopie.
 
-## Compliance and sending
-
-Saleasy follows a draft, validate, send model. Claude drafts, you approve a batch and Claude sends the approved items through your connected authorized tool (email via the official Gmail or Microsoft 365 API), then logs the result to your pipeline. Nothing is sent without your explicit yes. With monitoring and a scheduled task, Saleasy can watch accounts and prepare due follow-ups on its own, but the approval gate still applies.
-
-Saleasy stays within platform terms. It does not automate LinkedIn connection requests or DMs through unofficial automation and does not bypass anti-bot, rate-limit or detection systems. For a channel with no compliant programmatic send, it gives you a ready-to-send draft. Contact data comes from authorized providers and public sources, handled in line with GDPR.
-
-## Working files
-
-Saleasy keeps two per-user files in your working folder, both git-ignored so personal data never lands in the repo.
-
-- `saleasy-profile.md`: your market, offer, persona, tone and tools. Read by every skill.
-- `saleasy-pipeline.md` (or `.csv`): the lead and deal tracker created by prospecting and updated by selling. When a CRM is connected, the CRM is the source of truth and this file is a mirror.
-
-## Install
-
-This repository is a Claude plugin marketplace. Add it, then install the plugin.
+### Installation
+Colle ces deux lignes dans Claude:
 
 ```
 /plugin marketplace add MariusYvard/saleasy
 /plugin install saleasy@saleasy
 ```
 
-## Setup
+Aucune clé, aucun réglage technique. Ensuite, dis "configure saleasy" pour démarrer. Saleasy fonctionne seul avec la recherche web et devient plus efficace si tu connectes tes outils: email, agenda, CRM, base de prospects, réseau social, tableur. Voir `CONNECTORS.md`.
 
-No environment variables are required. Saleasy works standalone with web search and gets stronger when you connect tools: email, calendar, CRM, lead data, social, spreadsheet. See `CONNECTORS.md`. On first run, ask Saleasy to "configure saleasy". It writes `saleasy-profile.md` in your working folder, which you can edit by hand anytime.
+---
 
-## How to use it
+## English
 
-Describe the moment and the right skill loads, then asks what you want if the job is not already clear. Set up once, ask `selling` for a morning brief to start the day, use `prospecting` to fill and work the funnel, `marketing` to stay visible and `selling` around meetings, at close and for renewals.
+Saleasy is a complete sales assistant inside Claude. Install it once, answer a few questions about your business, then let it help at every stage of a deal: attract, prospect, sell and grow accounts. You talk to it in plain language ("prepare my meeting tomorrow", "write a follow-up to this prospect") and it adapts to your job, your offer and your style.
 
-## Customization
+It is not a small gadget. Behind four commands sits a real library of sales methods (prospecting, copywriting, closing, negotiation, forecasting, retention). Claude loads the right method at the right moment so you never have to look it up.
 
-Saleasy refers to tools by category, so it adapts to whatever you connect: email, calendar, CRM, lead data, social, spreadsheet, call notes. The `saleasy-setup` profile records your real tool in each category. See `CONNECTORS.md`.
+### What it does for you
 
-## Repo tooling
+- Set up once with a short interview about your market, offer, target, tone and tools, kept in a profile and reused everywhere.
+- Create marketing: LinkedIn posts and profile, content calendar, campaigns, blog and landing pages, newsletters, SEO, repurposing, lead magnets and positioning.
+- Run prospecting end to end: build a clean scored list under GDPR, spot the moment to reach out, write cold emails or a J0/J3/J7/J10 sequence, watch accounts for signals and send what you approved from your own mailbox.
+- Handle selling from first meeting to renewal: meeting prep and call summaries, pipeline review and an honest forecast, closing and negotiation without discounting, three-tier proposals with an ROI case, account growth and a daily brief with a weekly review.
 
-The repository ships its own quality gate. `scripts/lint-skills.py` runs on every push and pull request through GitHub Actions and blocks a merge on any house-style violation: a comma before "and" or "or", a banned marketing superlative, a missing or malformed skill description, em dashes or curly quotes. Issue and pull-request templates plus a CONTRIBUTING guide keep additions consistent. The MIT license and a `.gitignore` that excludes your profile and pipeline complete the setup.
+### Safety
+Saleasy never sends anything without your yes. Claude drafts, you approve, Claude sends through your official tools (Gmail or Microsoft 365), then logs the result. It stays within platform rules: no hidden LinkedIn automation, no bypass of protections. Contact data comes from authorized public sources under GDPR.
+
+### Install
+Paste these two lines into Claude:
+
+```
+/plugin marketplace add MariusYvard/saleasy
+/plugin install saleasy@saleasy
+```
+
+No keys, no technical setup. Then say "configure saleasy" to start. Saleasy works on its own with web search and gets stronger when you connect email, calendar, CRM, lead data, social or a spreadsheet. See `CONNECTORS.md`.
+
+---
+
+## For developers
+This repository is a Claude plugin marketplace with four skills and twelve reference playbooks. A house-style linter (`scripts/lint-skills.py`) runs in GitHub Actions on every push and pull request. It rejects a comma before "and" or "or", a banned marketing superlative and a malformed skill description. See `CONTRIBUTING.md`. Licensed MIT.
