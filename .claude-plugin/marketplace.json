@@ -1,0 +1,14 @@
+{
+  "name": "saleasy",
+  "owner": {
+    "name": "Marius Yvard"
+  },
+  "plugins": [
+    {
+      "name": "saleasy",
+      "source": "./",
+      "description": "All-in-one commercial cockpit in four skills: setup, marketing, prospecting, selling. Profile-driven and tool-agnostic.",
+      "category": "sales"
+    }
+  ]
+}
