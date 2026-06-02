@@ -19,7 +19,7 @@ Ce n'est pas un simple gadget. Derrière quatre commandes se cache une vraie bib
 Un court entretien sur ton marché, ton offre, ta cible, ton ton et tes outils. Saleasy garde ce profil et l'utilise partout, donc tu n'as plus jamais à tout réexpliquer. Tu peux le modifier quand tu veux.
 
 #### 2. Marketing et visibilité
-Posts LinkedIn, optimisation de ton profil LinkedIn, calendrier de contenu, campagnes, articles de blog, pages de vente, newsletters, référencement Google (SEO), recyclage d'un contenu en plusieurs formats, aimants à prospects (lead magnets) et positionnement. Chaque contenu vise une douleur client précise et s'appuie sur tes preuves (cas clients, chiffres), jamais sur des promesses inventées.
+Posts LinkedIn, optimisation de ton profil LinkedIn, calendrier de contenu, campagnes, articles de blog, pages de vente, newsletters, référencement Google (SEO), recyclage d'un contenu en plusieurs formats, lead magnets et positionnement. Chaque contenu vise une douleur client précise et s'appuie sur tes preuves (cas clients, chiffres), jamais sur des promesses inventées.
 
 #### 3. Prospection
 Remplir et travailler le haut du tunnel. Concrètement, Saleasy sait:
