@@ -6,6 +6,7 @@ Changed
 - Removed serial (Oxford) commas across the skills and docs to match the house style.
 - The CI linter now also blocks any comma before "and" or "or", a built-in list of marketing superlatives and a description that is not third person or has no quoted trigger phrase.
 - The version is declared once in plugin.json. The per-skill metadata block was removed.
+- Rewrote the README to document the four skills, the twelve playbooks and the repo tooling.
 
 Added
 - plugin.json now declares homepage and repository.
