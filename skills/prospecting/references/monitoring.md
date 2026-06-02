@@ -8,6 +8,9 @@ Confirm a watchlist with the user: which accounts or segments to follow, which s
 ## Run a pass
 For each watched account, check legitimate sources only: web search, official company and registry pages, news, official APIs and connected providers. Capture each signal with a type, a one-line label, a source link and a date. Apply the freshness weighting. Do not breach a platform's terms and do not evade anti-bot or detection systems; if a source is not reachable by permitted means, skip it and note the gap.
 
+## France open-data signals
+For French accounts, the BODACC API (bodacc.fr open data, free) publishes dated company events that map to the tension-signal taxonomy: sales and transfers, registrations, insolvency and other collective procedures, account filings, changes to an officer or the capital. Poll it per watched account or by SIREN, weight it by freshness like any signal and deduplicate against events already recorded. For accounts that sell to the public sector, public-tender feeds (BOAMP, DECP) are an intent signal worth watching.
+
 ## Act on a signal
 Write new signals into `saleasy-pipeline` (or the CRM): update the account signal, raise its intent tier when warranted, set a suggested action and date. For a high-intent signal on a hot account, flag it for the next briefing and offer to draft outreach. Deduplicate against signals already recorded.
 

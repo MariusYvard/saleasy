@@ -49,6 +49,8 @@ Updated: [YYYY-MM-DD]
 - Call notes: [tool or none]
 - Channels authorized for sending after validation: [...]
 - Automated monitoring: [on | off]
+- Open-data pack (France): [on | off]
+- INSEE Sirene token: [token or none]
 
 ## Proof assets
 - Case studies / metrics: [...]

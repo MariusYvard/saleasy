@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.0
+
+Added
+- A France open-data pack. Finding can use the API Recherche d'entreprises and the INSEE Sirene API for compliant firmographics. Monitoring can use the BODACC API for dated company-event signals. Setup offers it for a French market and CONNECTORS lists the sources.
+
 ## 0.5.0
 
 Changed

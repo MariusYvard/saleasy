@@ -36,7 +36,7 @@ Collect, in as few exchanges as possible (group related questions, prefer 2 to 3
 4. Differentiation. One or two reasons prospects choose them. Main competitors if known.
 5. Motion. Inbound, outbound or both. Sales cycle length. Weekly targets if any.
 6. Voice. Tone for outbound and content, language(s), things to never say.
-7. Tools and sending. Which tools cover email, calendar, CRM, lead data, social, spreadsheet, call notes. Which channels the user authorizes Saleasy to send through after validation. Whether to enable automated signal monitoring on a schedule.
+7. Tools and sending. Which tools cover email, calendar, CRM, lead data, social, spreadsheet, call notes. Which channels the user authorizes Saleasy to send through after validation. Whether to enable automated signal monitoring on a schedule. For a France market, offer the open-data pack: the API Recherche d'entreprises and the BODACC API need no key, the INSEE Sirene API needs a free token the user can paste later.
 8. Proof. Reusable assets: case studies, metrics, testimonials, signature, booking link.
 
 If the user says "whatever you think is best", propose concrete defaults for the profile type and confirm in one message. Do not stall.

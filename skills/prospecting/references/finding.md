@@ -8,6 +8,9 @@ A usable definition has four parts: industry, company size band, geography, targ
 ## Find (compliant discovery)
 Priority of sources: connected lead-data provider (Apollo, Clay, ZoomInfo and similar authorized providers), then official registries (for example Companies House), then company sites and public web research, then web search. Capture at minimum: company, full name, title, one public source URL. Use only permitted access: official APIs and authorized providers. Do not scrape a platform in breach of its terms, do not bypass a login or rate limit and do not drive a browser to evade anti-bot or detection systems. If data is only reachable by those means, leave the field "(à trouver)" and move on.
 
+## Official open-data sources (France)
+When the target market is France, official open data gives compliant firmographics and dated events at no cost. The API Recherche d'entreprises (recherche-entreprises.api.gouv.fr, free, no token) searches by name, address, officer or SIREN/SIRET and filters by NAF code, commune, department or region; it returns SIREN/SIRET, NAF, address, workforce band and officers, which feed the knockout gates on size, industry and geography. The INSEE Sirene API (portail-api.insee.fr, free token renewed every 24 hours) gives authoritative establishment-level data at volume. These return company data and officer mandates, not direct emails, so pair them with a compliant contact step. Do not use API Entreprise (entreprise.api.gouv.fr): it is reserved for public administrations under habilitation.
+
 ## Data protection
 The user is likely under GDPR and ePrivacy. Collect only the fields needed for outreach, record the source and date, keep a basis for contact (for B2B, legitimate interest plus a clear opt-out) and honor any prior opt-out. Never store special-category personal data. When unsure whether a contact may be approached, ask.
 

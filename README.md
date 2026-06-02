@@ -29,6 +29,7 @@ Remplir et travailler le haut du tunnel. Concrètement, Saleasy sait:
 - écrire un cold email court ou une séquence de relance (J0, J3, J7, J10), avec un contrôle qualité avant de te montrer quoi que ce soit.
 - surveiller des comptes en continu et te prévenir dès qu'un signal apparaît.
 - envoyer les messages que tu as validés, via ta messagerie officielle, puis noter le résultat.
+- pour un marché français, exploiter les données publiques officielles (registre des entreprises, BODACC) pour cibler et repérer des signaux d'achat.
 
 #### 4. Vente et fidélisation
 Du premier rendez-vous à la signature et après:
@@ -71,7 +72,7 @@ It is not a small gadget. Behind four commands sits a real library of sales meth
 
 - Set up once with a short interview about your market, offer, target, tone and tools, kept in a profile and reused everywhere.
 - Create marketing: LinkedIn posts and profile, content calendar, campaigns, blog and landing pages, newsletters, SEO, repurposing, lead magnets and positioning.
-- Run prospecting end to end: build a clean scored list under GDPR, spot the moment to reach out, write cold emails or a J0/J3/J7/J10 sequence, watch accounts for signals and send what you approved from your own mailbox.
+- Run prospecting end to end: build a clean scored list under GDPR, spot the moment to reach out, write cold emails or a J0/J3/J7/J10 sequence, watch accounts for signals and send what you approved from your own mailbox; for France, tap official open data (company registry, BODACC) to target and catch buying signals.
 - Handle selling from first meeting to renewal: meeting prep and call summaries, pipeline review and an honest forecast, closing and negotiation without discounting, three-tier proposals with an ROI case, account growth and a daily brief with a weekly review.
 
 ### Safety
