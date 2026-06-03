@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.7.0
+
+Changed
+- `prospecting` now owns every outbound writing job. Its description triggers on "rédige un mail", "écris une relance", "draft an email" and "write a follow-up". Now `selling` and `marketing` route any cold or outbound drafting to it so each message passes the quality gate, the cadence and the send protocol.
+- The cadence is now standard, not optional: draft J0, J3, J7 and J10 together, then propose a scheduled reminder for the first follow-up.
+- Pipeline traceability is a step of the send protocol: after a send Saleasy writes stage, contact dates, owner and channel back to the CRM, keyed on the email.
+
+Added
+- A safe Google Sheets CRM write routine in `sending.md`: prefer a Sheets API connector, back up before writing, key every row by email, navigate by the Name box, never Ctrl+A in the find box and write one cell at a time. Referenced from `selling` and `CONNECTORS.md`.
+- Gmail draft limits: the connector creates but cannot edit or delete a draft, so freeze the content first, check for an existing draft and never regenerate.
+- A signature rule: `saleasy-setup` collects a light inline HTML signature up front and `messaging.md` embeds it in every draft, because connector drafts do not inherit the Gmail signature.
+- Reinforced multi-contact deduplication: one live thread per company at a time, spaced sends when a company has two contacts.
+- Profile-template fields for signature (HTML), CRM URL, CRM column mapping, CRM write mode and authorized send channels.
+
 ## 0.6.0
 
 Added

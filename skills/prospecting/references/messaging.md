@@ -20,6 +20,12 @@ J0 first touch: open on the dated signal, one line on the pain, one proof point,
 ## Healthy-cadence guardrails
 Recommend and respect: a sane daily cap (roughly 15 to 20 cold LinkedIn invites), the prospect's working hours and timezone, deduplication (never the same person twice in a day, never two sequences at once across channels) and staggered sends.
 
+## Deduplication across contacts at one company
+One live thread per company at a time. When a company has two or more contacts (for example two buyers at the same firm), do not open both at once: pick the better-fit contact, start there and hold the second contact until the first thread stalls or the user says to multithread on purpose. When the user does choose to reach two contacts at one company, space the sends (different days, ideally different angles) so the company does not receive two near-identical emails the same morning. Before drafting a batch, group recipients by company domain and flag any company that appears more than once so the user decides the order.
+
+## Signature
+Connector-created drafts do not inherit the user's Gmail or Outlook signature, so embed it in the body of every email draft. Use the light inline HTML signature from the profile (name, role, company, phone, booking link). Never use an image signature or a tracking pixel: images hurt deliverability and often render as attachments or broken links in a drafted message. If the profile holds only a plain-text signature, wrap it in minimal HTML (line breaks plus the booking link as a real anchor). One signature per thread: include it on J0, then keep follow-ups in the same thread clean or use a one-line short signature.
+
 ## Quality gate
 Before presenting any message, score it 0 to 10 on relevance, clarity, brevity, single ask, tone fit and deliverability. If any axis is below 7, rewrite once and re-score. Show only the version that clears the bar.
 

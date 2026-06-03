@@ -2,12 +2,15 @@
 name: prospecting
 description: >
   This skill should be used for the top of the funnel: finding and qualifying
-  leads, monitoring accounts for buying signals, writing outbound sequences and
-  sending approved messages. Trigger on "trouve des leads", "build a lead list",
-  "qualifie ces prospects", "ICP", "surveille ces comptes", "mets en place une
-  veille", "alerte-moi si", "écris un cold email", "séquence outreach", "prépare
-  les relances", "envoie après validation", "send the approved emails", "reach
-  out to".
+  leads, monitoring accounts for buying signals, writing every piece of outbound
+  (cold emails, follow-ups, sequences) and sending approved messages. Any
+  outbound writing routes here so it passes the quality gate and cadence.
+  Trigger on "trouve des leads", "build a lead list", "qualifie ces prospects",
+  "ICP", "surveille ces comptes", "mets en place une veille", "alerte-moi si",
+  "écris un cold email", "rédige un mail", "rédige un email de prospection",
+  "écris une relance", "rédige les relances", "séquence outreach", "prépare les
+  relances", "draft an email", "write a follow-up", "write a cold email",
+  "envoie après validation", "send the approved emails", "reach out to".
 ---
 
 # Prospecting

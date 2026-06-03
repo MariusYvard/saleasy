@@ -28,10 +28,14 @@ Read `saleasy-profile.md`. Pull deal and account data from the CRM when connecte
 
 Pick the qualification or discovery framework that fits the deal from `references/methodologies.md` rather than applying all of them.
 
+## Outbound writing routes to prospecting
+
+Any cold or outbound message (a prospecting email, a follow-up, a re-engagement sequence, a J0/J3/J7/J10 cadence) is written by `prospecting`, not here, so it always passes the quality gate, the cadence and the send protocol. If a selling task needs outbound drafting, hand off to `prospecting`. Keep in `selling` only deal documents and replies inside an active thread (proposals, meeting recaps, follow-ups to a contact you already met).
+
 ## Rules
 
 Be honest about deal health; surface risk rather than smoothing it. Every meeting output ends in a concrete next step with an owner and a date. Never fabricate CRM data, attendee facts or numbers; research or mark unknown. For account growth, never confuse activation with expansion and do not upsell an unhappy account, save it first. Respect the writing directives: factual, no superlatives, no em dashes, straight quotes.
 
 ## Output
 
-A tight one-pager for prep and summaries, a table plus a prioritized action list for pipeline and forecast, a scannable briefing for pilotage. Always close with the single most important next action. Offer to write changes back to the CRM only with confirmation.
+A tight one-pager for prep and summaries, a table plus a prioritized action list for pipeline and forecast, a scannable briefing for pilotage. Always close with the single most important next action. Offer to write changes back to the CRM only with confirmation. When the CRM is a Google Sheet, follow the safe write routine in `../prospecting/references/sending.md` (back up first, key every row by email, navigate by the Name box, never Ctrl+A in the find box).
