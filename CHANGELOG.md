@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.8.0
+
+Added
+- Three LinkedIn deep-dive references in `marketing`: `linkedin-company-page.md` (organic page growth, GEO and SEO page setup, the TOFU MOFU BOFU matrix, native formats, Social Media Factory cadence, employee advocacy), `linkedin-personal-branding.md` (executive profile as a landing page, editorial pillars, the Rule of 100, ghostwriting and AI delegation, case studies, benchmarks, KPIs) and `linkedin-algorithm-2026.md` (the 360Brew model and Topic DNA, the format and engagement hierarchy, posting kinetics, day-by-day timing, the Welsh and Alic copywriting frameworks, external-link tactics).
+- `marketing` offers two new jobs (LinkedIn company page, executive personal branding) and routes "write a LinkedIn post" to the algorithm reference.
+
+Changed
+- `marketing` description triggers extended for company page, executive personal branding, employee advocacy, posting timing and the LinkedIn algorithm.
+
 ## 0.7.0
 
 Changed

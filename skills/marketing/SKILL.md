@@ -4,9 +4,9 @@ description: >
   This skill should be used for marketing and content: LinkedIn posts and
   profile, editorial calendars, campaigns, blog and landing-page copy,
   repurposing one piece into many, lead magnets, positioning and SEO. Trigger
-  on "écris un post LinkedIn", "optimise mon profil LinkedIn", "plan de contenu",
+  on "écris un post LinkedIn", "optimise mon profil LinkedIn", "page entreprise LinkedIn", "personal branding dirigeant", "employee advocacy", "carrousel LinkedIn", "newsletter LinkedIn", "meilleur moment pour publier", "algorithme LinkedIn", "plan de contenu",
   "calendrier éditorial", "campagne marketing", "rédige un article", "audit SEO",
-  "repurpose", "lead magnet", "positionnement", "write a LinkedIn post", "content
+  "repurpose", "lead magnet", "positionnement", "write a LinkedIn post", "LinkedIn company page", "executive personal branding", "ghostwriting", "best time to post", "content
   plan", "marketing campaign", "SEO".
 ---
 
@@ -16,7 +16,7 @@ Produce marketing and content that fits the user's market and voice. Covers Link
 
 ## Clarify first
 
-Read `saleasy-profile.md` from the working folder. If no profile exists, run `saleasy-setup` first (one-line heads-up, then continue). If the user has not said which job they want, ask one short question and offer the choices: LinkedIn post, LinkedIn profile, editorial calendar, campaign, long-form copy, SEO, repurposing, lead magnet, positioning. Then follow the matching section of `references/playbooks.md`.
+Read `saleasy-profile.md` from the working folder. If no profile exists, run `saleasy-setup` first (one-line heads-up, then continue). If the user has not said which job they want, ask one short question and offer the choices: LinkedIn post, LinkedIn profile, LinkedIn company page, executive personal branding, editorial calendar, campaign, long-form copy, SEO, repurposing, lead magnet, positioning. Then follow the matching section of `references/playbooks.md`. For LinkedIn company page growth, executive personal branding and the 360Brew algorithm or posting timing, load the matching deep-dive reference: `references/linkedin-company-page.md`, `references/linkedin-personal-branding.md` or `references/linkedin-algorithm-2026.md`.
 
 ## Always
 

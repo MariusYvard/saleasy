@@ -91,4 +91,4 @@ No keys, no technical setup. Then say "configure saleasy" to start. Saleasy work
 ---
 
 ## For developers
-This repository is a Claude plugin marketplace with four skills and twelve reference playbooks. A house-style linter (`scripts/lint-skills.py`) runs in GitHub Actions on every push and pull request. It rejects a comma before "and" or "or", a banned marketing superlative and a malformed skill description. See `CONTRIBUTING.md`. Licensed MIT.
+This repository is a Claude plugin marketplace with four skills and fifteen reference playbooks. A house-style linter (`scripts/lint-skills.py`) runs in GitHub Actions on every push and pull request. It rejects a comma before "and" or "or", a banned marketing superlative and a malformed skill description. See `CONTRIBUTING.md`. Licensed MIT.
