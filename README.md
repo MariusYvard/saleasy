@@ -1,4 +1,15 @@
-# Saleasy
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.svg">
+    <img src="docs/banner.svg" alt="Saleasy, A complete sales assistant inside Claude." width="100%">
+  </picture>
+</p>
+
+<p align="center">
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-215876">
+  <img alt="skills" src="https://img.shields.io/badge/skills-4-BF9B6F">
+  <img alt="playbooks" src="https://img.shields.io/badge/playbooks-15-D97F30">
+</p>
 
 Un assistant commercial complet dans Claude. A complete sales assistant inside Claude.
 
