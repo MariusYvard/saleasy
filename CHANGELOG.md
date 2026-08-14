@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.8.1 (2026-08-14)
+
+Changed
+- The plugin now lives in the `saleasy/` subdirectory instead of the repository root. The skills, the linter, `CONNECTORS.md` and `plugin.json` moved there, while the root keeps `marketplace.json` alone with `docs/`, the workflows and the top-level documents. The marketplace entry declares `"source": "./saleasy"`. A plugin declared at the root (`"source": "./"`) stays frozen for anyone who already installed it, so no new version ever reached existing users.
+- Existing users update without uninstalling anything: `/plugin marketplace update saleasy` then `/plugin update saleasy@saleasy`, then `/reload-plugins` or a new session. The README documents this in both languages.
+- The version is declared in `saleasy/.claude-plugin/plugin.json` only. `marketplace.json` carries no version, so the two cannot drift apart.
+
+Added
+- The linter checks the structure itself: a plugin entry named `saleasy` with `"source": "./saleasy"`, a `plugin.json` present in that subdirectory and no version field in `marketplace.json`. It still walks the whole repository for house-style violations.
+
 ## 0.8.0
 
 Added

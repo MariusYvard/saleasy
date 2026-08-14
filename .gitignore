@@ -3,6 +3,10 @@ saleasy-profile*.md
 saleasy-pipeline*.md
 saleasy-pipeline*.csv
 
+# Python bytecode
+__pycache__/
+*.pyc
+
 # OS and editor noise
 .DS_Store
 Thumbs.db

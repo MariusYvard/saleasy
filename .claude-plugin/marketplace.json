@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "saleasy",
-      "source": "./",
+      "source": "./saleasy",
       "description": "All-in-one commercial cockpit in four skills: setup, marketing, prospecting, selling. Profile-driven and tool-agnostic.",
       "category": "sales"
     }

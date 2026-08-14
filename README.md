@@ -65,7 +65,17 @@ Colle ces deux lignes dans Claude:
 /plugin install saleasy@saleasy
 ```
 
-Aucune clé, aucun réglage technique. Ensuite, dis "configure saleasy" pour démarrer. Saleasy fonctionne seul avec la recherche web et devient plus efficace si tu connectes tes outils: email, agenda, CRM, base de prospects, réseau social, tableur. Voir `CONNECTORS.md`.
+Aucune clé, aucun réglage technique. Ensuite, dis "configure saleasy" pour démarrer. Saleasy fonctionne seul avec la recherche web et devient plus efficace si tu connectes tes outils: email, agenda, CRM, base de prospects, réseau social, tableur. Voir `saleasy/CONNECTORS.md`.
+
+### Mettre a jour
+Rien a desinstaller. Colle ces deux lignes:
+
+```
+/plugin marketplace update saleasy
+/plugin update saleasy@saleasy
+```
+
+Puis `/reload-plugins`, ou simplement ouvre une nouvelle session. Ton profil et ton suivi restent en place.
 
 ---
 
@@ -93,9 +103,19 @@ Paste these two lines into Claude:
 /plugin install saleasy@saleasy
 ```
 
-No keys, no technical setup. Then say "configure saleasy" to start. Saleasy works on its own with web search and gets stronger when you connect email, calendar, CRM, lead data, social or a spreadsheet. See `CONNECTORS.md`.
+No keys, no technical setup. Then say "configure saleasy" to start. Saleasy works on its own with web search and gets stronger when you connect email, calendar, CRM, lead data, social or a spreadsheet. See `saleasy/CONNECTORS.md`.
+
+### Update
+Nothing to uninstall. Paste these two lines:
+
+```
+/plugin marketplace update saleasy
+/plugin update saleasy@saleasy
+```
+
+Then run `/reload-plugins` or just open a new session. Your profile and tracking stay in place.
 
 ---
 
 ## For developers
-This repository is a Claude plugin marketplace with four skills and fifteen reference playbooks. A house-style linter (`scripts/lint-skills.py`) runs in GitHub Actions on every push and pull request. It rejects a comma before "and" or "or", a banned marketing superlative and a malformed skill description. See `CONTRIBUTING.md`. Licensed MIT.
+This repository is a Claude plugin marketplace. The plugin itself lives in the `saleasy/` subdirectory (four skills and fifteen reference playbooks), which is what lets installed users receive updates. The version is declared only in `saleasy/.claude-plugin/plugin.json`. A house-style linter (`saleasy/scripts/lint-skills.py`) runs in GitHub Actions on every push and pull request. It rejects a comma before "and" or "or", a banned marketing superlative and a malformed skill description. See `CONTRIBUTING.md`. Licensed MIT.

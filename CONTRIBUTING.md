@@ -4,10 +4,10 @@ Thanks for improving Saleasy. Contributions that add a skill, sharpen a playbook
 
 ## Adding or editing a skill
 
-Each skill is a directory under `skills/` with a `SKILL.md` file and optional `references/`:
+Each skill is a directory under `saleasy/skills/` with a `SKILL.md` file and optional `references/`:
 
 ```
-skills/
+saleasy/skills/
   skill-name/
     SKILL.md
     references/
@@ -17,7 +17,7 @@ skills/
 
 ## House style (enforced by CI)
 
-The linter at `scripts/lint-skills.py` runs on every push and pull request and blocks the merge on any violation:
+The linter at `saleasy/scripts/lint-skills.py` runs on every push and pull request and blocks the merge on any violation:
 - No em dashes or en dashes. Use parentheses or commas.
 - Straight quotes and apostrophes only.
 - Every skill has valid frontmatter with a matching name and a description.
@@ -30,7 +30,7 @@ Also keep a neutral and factual tone and vary list lengths rather than always gr
 Run the linter locally before opening a pull request:
 
 ```
-python3 scripts/lint-skills.py
+python3 saleasy/scripts/lint-skills.py
 ```
 
 ## Pull requests
